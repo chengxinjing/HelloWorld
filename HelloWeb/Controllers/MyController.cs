@@ -35,7 +35,7 @@ namespace HelloWeb.Controllers
             List<AdminUser> adminUserList = new List<AdminUser>();
 
             MyFirst myFirst = new MyFirst();
-            myFirst.Name = "程序集引用";
+            myFirst.Name = "程序集引用的";
             AdminUser admin = new AdminUser();
             admin.MyFirstName = myFirst;
             adminUserList.Add(admin);
