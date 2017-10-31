@@ -35,7 +35,7 @@ namespace HelloWeb.Controllers
             List<AdminUser> adminUserList = new List<AdminUser>();
 
             MyFirst myFirst = new MyFirst();
-            myFirst.Name = "程序集引";
+            myFirst.Name = "程序集引用";
             AdminUser admin = new AdminUser();
             admin.MyFirstName = myFirst;
             adminUserList.Add(admin);
@@ -47,7 +47,7 @@ namespace HelloWeb.Controllers
         public ViewResult UserInfo(string Name, string Age) {
          
               //  DatabaseRelation.DatabaseRelation.CreateModel( DatabaseRelation.DatabaseRelation.getDbConnectionString("BDConnectionStrings"));
-            DatabaseRelation.DatabaseRelation.CreateModel(DatabaseRelation.DatabaseRelation.getDbConnectionString("loan-after"),"D:/mysql/Modelss");
+            DatabaseRelation.DatabaseRelation.CreateModel(DatabaseRelation.DatabaseRelation.getDbConnectionString("loan-after"),"D:/mysql/Models");
             DatabaseBasicOperator.CreateModel(DatabaseBasicOperator.getDbConnectionString("192.168.1.145", "loan-after", "root", "loanadmin"));
         
             return View("user");
