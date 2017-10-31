@@ -1,0 +1,19 @@
+﻿@Model
+@{ 
+    var name = Request["Name"];
+    var age = Request["Age"];
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+     姓名：@name<br />
+年龄：@age
+    </div>
+</body>
+</html>
