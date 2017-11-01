@@ -7,7 +7,7 @@ using System.Security.Cryptography;
 
 namespace MyApplicationLibrary.Strings
 {
-    public class StringUtils
+    public sealed class StringUtils
     {
 
         /// <summary>
