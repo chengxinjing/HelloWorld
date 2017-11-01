@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using MyLibrary;
+
 namespace HelloWeb.Models
 {
     [SerializableAttribute]
@@ -12,7 +12,6 @@ namespace HelloWeb.Models
         private string _RoleId { get; set; }
         private string _Password { get; set; }
         private string _salt { get; set; }
-        public MyFirst MyFirstName { get; set; }
         
     }
 }

@@ -8,7 +8,6 @@ using HelloWeb.Models;
 using System.IO;
 using System.Data;
 using MySql.Data.MySqlClient;
-using MyLibrary;
 using HelloWeb.DatabaseRelation;
 using MyApplicationLibrary.DatabaseOperator;
 namespace HelloWeb.Controllers
@@ -34,10 +33,7 @@ namespace HelloWeb.Controllers
         {
             List<AdminUser> adminUserList = new List<AdminUser>();
 
-            MyFirst myFirst = new MyFirst();
-            myFirst.Name = "程序集引用";
             AdminUser admin = new AdminUser();
-            admin.MyFirstName = myFirst;
             adminUserList.Add(admin);
             adminUserList.Add(admin);
             adminUserList.Add(admin);
